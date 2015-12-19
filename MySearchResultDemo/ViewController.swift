@@ -56,8 +56,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         readJson()
         
-        // 调用storyboard的类方法建立一个ViewController的实例，identifier入参是该ViewController的标识符
-        // 本例中就是那个没有入口的NavigateView，其segue指向了SearchResultTableVIewController的Class
+        // 调用storyboard的类方法建立一个ViewController的实例，identifier入参是那个没有入口的NavigateView的stroryBoard的标识符
+        // NavigateView的segue指向了SearchResultTableVIewController的Class
         searchResultsController = (self.storyboard?.instantiateViewControllerWithIdentifier("SearchResultsController"))! as UIViewController
         
         //初始化UISearchController的实例，如果搜索结果显示在原始tableView，则入参直接置为nil，否则入参为新的tableView

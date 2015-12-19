@@ -15,6 +15,7 @@
 		88BC417C1C24F6EE00175927 /* MySearchResultDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC417B1C24F6EE00175927 /* MySearchResultDemoTests.swift */; };
 		88BC41871C24F6EE00175927 /* MySearchResultDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC41861C24F6EE00175927 /* MySearchResultDemoUITests.swift */; };
 		88BC41951C24F73500175927 /* airlineData.json in Resources */ = {isa = PBXBuildFile; fileRef = 88BC41941C24F73500175927 /* airlineData.json */; };
+		88BC41971C25014E00175927 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC41961C25014E00175927 /* SearchResultTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		88BC41861C24F6EE00175927 /* MySearchResultDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchResultDemoUITests.swift; sourceTree = "<group>"; };
 		88BC41881C24F6EE00175927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BC41941C24F73500175927 /* airlineData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airlineData.json; sourceTree = "<group>"; };
+		88BC41961C25014E00175927 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultTableViewController.swift; path = ../SearchResultTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				88BC41661C24F6EE00175927 /* AppDelegate.swift */,
+				88BC41961C25014E00175927 /* SearchResultTableViewController.swift */,
 				88BC41681C24F6EE00175927 /* ViewController.swift */,
 				88BC416A1C24F6EE00175927 /* Main.storyboard */,
 				88BC416D1C24F6EE00175927 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			files = (
 				88BC41691C24F6EE00175927 /* ViewController.swift in Sources */,
 				88BC41671C24F6EE00175927 /* AppDelegate.swift in Sources */,
+				88BC41971C25014E00175927 /* SearchResultTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

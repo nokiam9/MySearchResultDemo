@@ -36,12 +36,41 @@
                     </view>
                     <navigationItem key="navigationItem" id="8re-cO-IBj"/>
                     <connections>
-                        <outlet property="tableView" destination="8re-cO-IBj" id="a2c-YJ-boc"/>
+                        <outlet property="tableView" destination="iuI-tf-wMI" id="fzP-OH-4jG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="406"/>
+        </scene>
+        <!--Search Result Table View Controller-->
+        <scene sceneID="ZW9-65-xAG">
+            <objects>
+                <tableViewController id="tm8-kl-h9p" customClass="SearchResultTableViewController" customModule="MySearchResultDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dg4-3u-oWf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResult" id="rd5-Q4-ALT">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rd5-Q4-ALT" id="AIb-n0-Ejq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tm8-kl-h9p" id="upr-ZR-eYh"/>
+                            <outlet property="delegate" destination="tm8-kl-h9p" id="nEJ-Nh-AMo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tbi-Oy-Xen"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIr-ZF-e4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="1026"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OLT-5W-1zu">
@@ -60,6 +89,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onV-me-CNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bs2-oY-oRS">
+            <objects>
+                <navigationController storyboardIdentifier="SearchResultsController" automaticallyAdjustsScrollViewInsets="NO" id="zqs-2H-iRN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UuW-7k-7TY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tm8-kl-h9p" kind="relationship" relationship="rootViewController" id="hIC-9I-x8b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjH-KN-zTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="1026"/>
         </scene>
     </scenes>
 </document>

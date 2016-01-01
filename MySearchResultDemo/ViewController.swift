@@ -62,6 +62,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //初始化UISearchController的实例，如果搜索结果显示在原始tableView，则入参直接置为nil，否则入参为新的tableView
         //UISearchController类的内部包含了searchResultController和searchBar两个控件
+        /*-------------------
+        注意：本例中将搜索结果显示在一个新的tableView中，如果需要将搜索结果显示在原始tableView中，则：
+        1、不需要定义searchResultsController
+        2、searchController＝UISearchController()，即class的初始化直接赋值nil，说明搜索结果就在tableView中显示
+        3、继续设置searchController的searchResultsUpdater和searchBar.frame，以及将searchBar控件置为最顶层
+        4、重定义tableView的dataSource接口，注意可以通过searchController.active判断当前状态是基本view还是搜索view，相应设置row和cell的参数
+        5、重定义updateSearchResultsForSearchController方法，继续设置filteredAirlines的结果数据，但不需要显示新的tableView，直接调用tableView.reloadData即可完成
+        6、说明，搜索结果在同一个view时，搜索结果数据列表是不可编辑的灰色显示，但可以在搜索框数据输入的同时，动态显示搜索结果
+        --------------------*/
         searchController = UISearchController(searchResultsController: searchResultsController)
         
         if searchController != nil {
